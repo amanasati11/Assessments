@@ -217,18 +217,20 @@
             Console.WriteLine("Q5 => find the even and odd numbers");
 
             var EvenNumber = numbers
-                .Where(num => (num % 2) == 0)
-                .Distinct();
+                .Distinct()
+                .Where(num => (num % 2) == 0);
+                
             Console.Write("Even Numbers are: ");
             foreach (var num in EvenNumber)
             {
                 Console.Write(num + " ");
             }
             Console.WriteLine();
-            
+
             var OddNumber = numbers
-                .Where(num => (num % 2) != 0)
-                .Distinct();
+                .Distinct()
+                .Where(num => (num % 2) != 0);
+
             Console.Write("Odd Numbers are: ");
             foreach (var num in OddNumber)
             {
